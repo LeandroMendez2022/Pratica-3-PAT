@@ -1,0 +1,10 @@
+*{
+    margin:0;
+    padding:0;
+}
+header{
+    background-image: url("C:\Users\leand\OneDrive\Pictures\dee96834062836.56fa48468d4c3.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position:center ;
+}
