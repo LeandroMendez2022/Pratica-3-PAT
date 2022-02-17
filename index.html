@@ -4,15 +4,25 @@
     <meta charset= "UTF-8">
     <meta name="viewport" content="with=device-width, inital-scale=1.0">
     <link rel="stylesheet" href="bootstrap.min.css">
-    <title>Univesidad site</title>
+    
+
+
+    
+    <link rel = "stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <title>BBVA</title>
     <style>
 
         .navbar-custom
         {
-            background-color: rgb(41, 153, 168);
+            background-color: rgb(20, 37, 94);
         }
         .nav-link {
-                color: rgb(0, 0, 0);
+                color: rgb(168, 139, 139);
             }
     
             .nav-item>a:hover {
@@ -39,17 +49,52 @@
         color: rgb(255, 255, 255);   
         
     }
+    .bg-custom{
+      background-color:#130f40;
+      }
+      .button-fixed{
+      bottom: 0;
+      position: fixed;
+      right: 0;
+      border-radius: 4px;
+      }
+      .fas{
+      cursor: pointer;
+      font-size: 24px;
+      }
+      p{
+      font-size: 14px;
+      }
     
     
     </style>
+
+<div class="hidden-sm login-wrapper" data-action="move" data-key="login-wrapper" data-type="src" data-bp="lg md">
+<div id="AccountLoginWrapper">
+  <a href="#" id="loginToggle" class="btn login-toggle" data-toggle-custom="modal" data-target="#AccountLogin" title="View Digital Banking Log In">Log In</a>
+  
+  <div class="account-login-form">
+      <div class="account-login-form-wrapper">
+          <fieldset data-action="https://esfcu.cbzsecure.com/auth" data-method="POST" data-enctype="application/x-www-form-urlencoded">
+            
+              <div class="form-group">
+                  <label for="uid" class="sr-only">Username</label>
+                  <input type="text" name="uid" placeholder="Username" id="uid" class="form-control"/>
+              </div>
+              <div class="form-group">
+                  <label for="pwd" class="sr-only">Password</label>
+                  <input type="password" name="pwd" placeholder="Password" class="form-control" id="pwd" autocomplete="off"/>
+              </div>
+              <button type="submit" class="btn btn-primary submit">Log In</button>
+         
+          </fieldset>
+          </div>
+  </div>
+
 </head>
-<div class="d-flex justify-content-center mt-5">
-    <div class="card p-3 cookie"><span>We use third party cookies to personalize content, ads and analyze site traffic.<br></span><a href="#">Learn more<i class="fa fa-angle-right ml-2"></i></a>
-        <div class="mt-4 text-right"><span class="mr-3 decline">Decline</span><button class="btn btn-light btn-sm" type="button">Allow cookies</button></div>
-    </div>
-</div>
+
 <body background="white.jpg">
-    
+
     <nav class="navbar navbar-expand-lg navbar-custom bg-custom">
         <a class="navbar-brand" href="index.html">BBVA</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -67,13 +112,13 @@
 
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Dropdown
+                      Redes Sociales
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href="#">Action</a>
-                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="https://www.youtube.com/user/BBVAespana">Youtube</a>
+                      <a class="dropdown-item" href="https://twitter.com/BBVA_espana">Twitter</a>
                       <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#">Something else here</a>
+                      <a class="dropdown-item" href="https://www.facebook.com/BBVAGroup/?brand_redir=242465215866259">Facebook</a>
                     </div>
                   </li>
             
@@ -161,7 +206,52 @@
 </table>
 
 
+
+<body>
+  
+<div class="container">
+ 
+<h3 class="text-primary"></h3>
+ 
+<div class="alert alert-success" role="alert">
+ 
+  <strong>
+    Utilizamos cookies de terceros para peronailze contenido, anuncios y analizar el tráfico del sitio.
+ 
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+ 
+    <span aria-hidden="true">&times;</span>
+ 
+  </button>
+ 
+</div>
+
+
+
+
+
+<footer id="footer">
+
+  <div class="footer-newsletter">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-6">
+          <h4>Suscribete a nuestra newsletter</h4>
+          <p>Suscríbete a nuestra newsletter y, semanalmente, le enviarmeos infromación sobre novedades y tendencias.</p>
+          <form action="" method="post">
+            <input type="email" name="email"><input type="submit" value="Suscribirme">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</footer>
+
 <div class="footer-copyright text-center py-3">© 2022 Copyright:
-    <a href="https://www.bbva.com/es/"> BBVA.com</a>
+  <a href="https://www.bbva.com/es/"> BBVA.com</a>
+
+
 </body>
-</html>
+   
+    </html>
